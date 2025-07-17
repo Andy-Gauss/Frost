@@ -63,10 +63,15 @@ button:hover {
     transform: translateY(-2px);
 }
 
-.buttons {
+.buttons, .nav-buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
+}
+
+.back-btn {
+    background-color: #f8bbd0 !important;
 }
 
 .message {
