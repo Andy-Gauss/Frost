@@ -24,6 +24,16 @@ function showPage(pageId) {
     }
 }
 
+// 返回功能
+function goBack() {
+    const currentPage = document.querySelector('.container:not(.hidden)').id;
+    if (currentPage === 'page2' || currentPage === 'page3') {
+        showPage('page1');
+    } else if (currentPage === 'page4') {
+        showPage('page2');
+    }
+}
+
 // 初始化：确保只显示第一页
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
