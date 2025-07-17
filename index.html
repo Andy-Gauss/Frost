@@ -10,8 +10,8 @@
     <div class="container" id="page1">
         <h1>请问你是？</h1>
         <div class="buttons">
-            <button onclick="showPage('page2')">她</button>
-            <button onclick="showPage('page3')">他（第一次尽量不要选这个）</button>
+            <button onclick="showPage('page2')">她（你的选项在这里）</button>
+            <button onclick="showPage('page3')">他（不建议点这个）</button>
         </div>
     </div>
 
@@ -37,12 +37,18 @@
             那些千纸鹤，是为你折的，<br>
             而我期待的人，在眼前。</p>
         </div>
-        <button onclick="showPage('page4')">继续</button>
+        <div class="nav-buttons">
+            <button class="back-btn" onclick="goBack()">返回</button>
+            <button onclick="showPage('page4')">继续</button>
+        </div>
     </div>
 
     <div class="container hidden" id="page3">
         <h1>致重要的你</h1>
         <p>希望你在接下来的日子里能够好好对待她，记得你心中许下的承诺</p>
+        <div class="nav-buttons">
+            <button class="back-btn" onclick="goBack()">返回</button>
+        </div>
     </div>
 
     <div class="container hidden" id="page4">
@@ -56,6 +62,9 @@
             <p>我这几天晚上经常梦到你，即便在梦中，我都很害怕，</p>
             <p>我怕如果等太久了，你被别人追走了怎么办......</p>
             <p>我应该再主动一点......</p>
+        </div>
+        <div class="nav-buttons">
+            <button class="back-btn" onclick="goBack()">返回</button>
         </div>
     </div>
 
