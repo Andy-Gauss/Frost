@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给特别的你</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="page1">
+        <h1>请问你是？</h1>
+        <div class="buttons">
+            <button onclick="showPage('page2')">她</button>
+            <button onclick="showPage('page3')">他</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h1>给特别的你</h1>
+        <div class="message">
+            <p>2004年，我两岁。<br>
+            外公从湖南来广东，带了我一个月，<br>
+            那是我人生中最幸福的时光之一。</p>
+            
+            <p>那时候，外公教会了我折千纸鹤，<br>
+            他说："长大以后，可以送给你最想送的人。"</p>
+            
+            <p>上次回湖南，外公身体不好，已经不太能说话。<br>
+            我告诉外公，我要折千纸鹤送给她，<br>
+            外公欣慰地笑了，眼神里满是宠溺。</p>
+            
+            <p>那一刻，我仿佛回到了2004年的夏天，<br>
+            那时候我满怀着童真和希望，<br>
+            仿佛是期待着什么。</p>
+            
+            <p>而现在，我终于知道，<br>
+            那些千纸鹤，是为你折的，<br>
+            而我期待的人，在眼前。</p>
+        </div>
+        <button onclick="showPage('page4')">继续</button>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h1>致重要的你</h1>
+        <p>希望你在接下来的日子里能够好好对待她，记得你心中许下的承诺</p>
+    </div>
+
+    <div class="container hidden" id="page4">
+        <h1>其实那天...</h1>
+        <div class="message">
+            <p>其实那天你说"再追一段时间"之后...</p>
+            <p>我回去想了很久......是不是你不喜欢我呀......</p>
+            <p>但后来某人的吻给了我勇气，让我觉得好像不用等那么久了？</p>
+            <p>本来按计划，我应该是下个月跟你去武汉的时候才表白的...</p>
+            <p>但有人好像偷偷改剧本了？</p>
+            <p>我这几天晚上经常梦到你，即便在梦中，我都很害怕，</p>
+            <p>我怕如果等太久了，你被别人追走了怎么办......</p>
+            <p>我应该再主动一点......</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
