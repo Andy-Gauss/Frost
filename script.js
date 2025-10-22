@@ -18,6 +18,10 @@ function showPage(pageId) {
             document.body.style.backgroundColor = '#fff0f9';
         } else if (pageId === 'page3') {
             document.body.style.backgroundColor = '#f0f8ff';
+        } else if (pageId === 'page4') {
+            document.body.style.backgroundColor = '#fff5f7';
+        } else if (pageId === 'page5') {
+            document.body.style.backgroundColor = '#fff8e1';
         } else {
             document.body.style.backgroundColor = '#fff0f5';
         }
@@ -31,15 +35,13 @@ function goBack() {
         showPage('page1');
     } else if (currentPage === 'page4') {
         showPage('page2');
+    } else if (currentPage === 'page5') {
+        showPage('page4');
     }
 }
 
 // 初始化：确保只显示第一页
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
-    
-    // 为第四页设置特殊背景色
-    document.getElementById('page4').addEventListener('click', () => {
-        document.body.style.backgroundColor = '#fff5f7';
-    });
 });
+
