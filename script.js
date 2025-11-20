@@ -22,6 +22,8 @@ function showPage(pageId) {
             document.body.style.backgroundColor = '#fff5f7';
         } else if (pageId === 'page5') {
             document.body.style.backgroundColor = '#fff8e1';
+        } else if (pageId === 'page6') {
+            document.body.style.backgroundColor = '#f9f0ff';
         } else {
             document.body.style.backgroundColor = '#fff0f5';
         }
@@ -37,6 +39,8 @@ function goBack() {
         showPage('page2');
     } else if (currentPage === 'page5') {
         showPage('page4');
+    } else if (currentPage === 'page6') {
+        showPage('page5');
     }
 }
 
