@@ -24,6 +24,10 @@ function showPage(pageId) {
             document.body.style.backgroundColor = '#fff8e1';
         } else if (pageId === 'page6') {
             document.body.style.backgroundColor = '#f9f0ff';
+        } else if (pageId === 'page7') {
+            document.body.style.backgroundColor = '#f0fff5';
+        } else if (pageId === 'page8') {
+            document.body.style.backgroundColor = '#fffaf0';
         } else {
             document.body.style.backgroundColor = '#fff0f5';
         }
@@ -41,6 +45,10 @@ function goBack() {
         showPage('page4');
     } else if (currentPage === 'page6') {
         showPage('page5');
+    } else if (currentPage === 'page7') {
+        showPage('page6');
+    } else if (currentPage === 'page8') {
+        showPage('page7');
     }
 }
 
@@ -48,4 +56,5 @@ function goBack() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
 });
+
 
