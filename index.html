@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>给特别的你</title>
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Analytics 代码 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SQFZ2HYX9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4SQFZ2HYX9');
+        
+        // 可选：添加页面浏览事件跟踪
+        document.addEventListener('DOMContentLoaded', function() {
+            // 跟踪页面切换
+            window.trackPageView = function(pageName) {
+                gtag('event', 'page_view', {
+                    page_title: pageName,
+                    page_location: window.location.href,
+                    page_path: '/' + pageName
+                });
+            };
+        });
+    </script>
 </head>
 <body>
     <div class="container" id="page1">
@@ -357,6 +379,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
