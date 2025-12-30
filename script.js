@@ -1,4 +1,4 @@
-// 页面切换函数
+// 在现有的showPage函数中添加跟踪
 function showPage(pageId) {
     // 隐藏所有页面
     document.querySelectorAll('.container').forEach(page => {
@@ -7,29 +7,33 @@ function showPage(pageId) {
     
     // 显示目标页面
     const targetPage = document.getElementById(pageId);
-    if (targetPage) {
-        targetPage.classList.remove('hidden');
-        
-        // 滚动到顶部
-        window.scrollTo(0, 0);
-        
-        // 根据页面ID改变背景色
-        if (pageId === 'page2') {
-            document.body.style.backgroundColor = '#fff0f9';
-        } else if (pageId === 'page3') {
-            document.body.style.backgroundColor = '#f0f8ff';
-        } else if (pageId === 'page4') {
-            document.body.style.backgroundColor = '#fff5f7';
-        } else if (pageId === 'page5') {
-            document.body.style.backgroundColor = '#fff8e1';
-        } else if (pageId === 'page6') {
-            document.body.style.backgroundColor = '#f9f0ff';
-        } else if (pageId === 'page7') {
-            document.body.style.backgroundColor = '#f0fff5';
-        } else if (pageId === 'page8') {
-            document.body.style.backgroundColor = '#fffaf0';
-        } else {
-            document.body.style.backgroundColor = '#fff0f5';
+    targetPage.classList.remove('hidden');
+    
+    // 跟踪页面访问（如果添加了上面的代码）
+    if (typeof trackPageView === 'function') {
+        const pageTitle = targetPage.querySelector('h1')?.textContent || pageId;
+        trackPageView(pageTitle);
+    }
+}
+
+function goBack() {
+    const currentPage = document.querySelector('.container:not(.hidden)');
+    const currentId = currentPage.id;
+    
+    // 简单的返回逻辑：返回到page1
+    if (currentId !== 'page1') {
+        if (currentId === 'page2' || currentId === 'page3') {
+            showPage('page1');
+        } else if (currentId === 'page4') {
+            showPage('page2');
+        } else if (currentId === 'page5') {
+            showPage('page4');
+        } else if (currentId === 'page6') {
+            showPage('page5');
+        } else if (currentId === 'page7') {
+            showPage('page6');
+        } else if (currentId === 'page8') {
+            showPage('page7');
         }
     }
 }
@@ -56,5 +60,6 @@ function goBack() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
 });
+
 
 
