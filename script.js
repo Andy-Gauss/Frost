@@ -16,28 +16,6 @@ function showPage(pageId) {
     }
 }
 
-function goBack() {
-    const currentPage = document.querySelector('.container:not(.hidden)');
-    const currentId = currentPage.id;
-    
-    // 简单的返回逻辑：返回到page1
-    if (currentId !== 'page1') {
-        if (currentId === 'page2' || currentId === 'page3') {
-            showPage('page1');
-        } else if (currentId === 'page4') {
-            showPage('page2');
-        } else if (currentId === 'page5') {
-            showPage('page4');
-        } else if (currentId === 'page6') {
-            showPage('page5');
-        } else if (currentId === 'page7') {
-            showPage('page6');
-        } else if (currentId === 'page8') {
-            showPage('page7');
-        }
-    }
-}
-
 // 返回功能
 function goBack() {
     const currentPage = document.querySelector('.container:not(.hidden)').id;
@@ -53,6 +31,12 @@ function goBack() {
         showPage('page6');
     } else if (currentPage === 'page8') {
         showPage('page7');
+    } else if (currentPage === 'page9') {
+        showPage('page8');
+    } else if (currentPage === 'page10') {
+        showPage('page9');
+    } else if (currentPage === 'page11') {
+        showPage('page10');
     }
 }
 
@@ -60,6 +44,8 @@ function goBack() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
 });
+
+
 
 
 
