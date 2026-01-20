@@ -67,6 +67,8 @@ function goBack() {
         showPage('page24');
     } else if (currentPage === 'page26') {
         showPage('page25');
+    } else if (currentPage === 'page27') {
+        showPage('page26');
     }
 }
 
