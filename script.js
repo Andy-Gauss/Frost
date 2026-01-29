@@ -79,13 +79,17 @@ function goBack() {
         showPage('page30');
     } else if (currentPage === 'page32') {
         showPage('page31');
+    } else if (currentPage === 'page33') {
+        showPage('page32');
     }
 }
 
 // 初始化：确保只显示第一页
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
-});;
+});
+
+
 
 
 
