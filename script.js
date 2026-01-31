@@ -83,6 +83,8 @@ function goBack() {
         showPage('page32');
     } else if (currentPage === 'page34') {
         showPage('page33');
+    } else if (currentPage === 'page35') {
+        showPage('page34');
     }
 }
 
@@ -90,6 +92,7 @@ function goBack() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
 });
+
 
 
 
