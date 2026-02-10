@@ -103,6 +103,8 @@ function goBack() {
         showPage('page42');
     } else if (currentPage === 'page44') {
         showPage('page43');
+    } else if (currentPage === 'page45') {
+        showPage('page44');
     }
 }
 
