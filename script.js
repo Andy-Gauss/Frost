@@ -19,7 +19,7 @@ function showPage(pageId) {
 // 返回功能
 function goBack() {
     const currentPage = document.querySelector('.container:not(.hidden)').id;
-    if (currentPage === 'page2' || currentPage === 'page3') {
+    if (currentPage === 'page3') {
         showPage('page1');
     } else if (currentPage === 'page4') {
         showPage('page2');
@@ -135,6 +135,10 @@ function goBack() {
         showPage('page57');
     } else if (currentPage === 'page60') {
         showPage('page1');
+    } else if (currentPage === 'page61') {
+        showPage('page60');
+    } else if (currentPage === 'page2') {
+        showPage('page61');
     }
 }
 
@@ -142,6 +146,7 @@ function goBack() {
 document.addEventListener('DOMContentLoaded', () => {
     showPage('page1');
 });
+
 
 
 
