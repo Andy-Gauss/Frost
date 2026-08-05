@@ -138,7 +138,7 @@ function goBack() {
     } else if (currentPage === 'page61') {
         showPage('page60');
     } else if (currentPage === 'page2') {
-        showPage('page71');
+        showPage('page72');
     } else if (currentPage === 'page62') {
         showPage('page61');
     } else if (currentPage === 'page63') {
@@ -159,6 +159,8 @@ function goBack() {
         showPage('page69');
     } else if (currentPage === 'page71') {
         showPage('page70');
+    } else if (currentPage === 'page72') {
+        showPage('page71');
     }
 }
 
