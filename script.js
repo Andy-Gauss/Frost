@@ -163,6 +163,8 @@ function goBack() {
         showPage('page71');
     } else if (currentPage === 'page73') {
         showPage('page72');
+    } else if (currentPage === 'page74') {
+        showPage('page73');
     }
 }
 
